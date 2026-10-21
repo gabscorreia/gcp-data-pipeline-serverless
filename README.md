@@ -1,4 +1,4 @@
-# Pipeline de Dados Serverless End-to-End (GCP & Python)
+# Pipeline de Dados Serverless End-to-End
 
 [![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/)
 [![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
