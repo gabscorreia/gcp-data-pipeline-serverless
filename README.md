@@ -2,6 +2,7 @@
 
 [![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/)
 [![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=google-colaboratory&logoColor=white)](https://colab.research.google.com/)
 [![BigQuery](https://img.shields.io/badge/BIGQUERY-669DF6?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/bigquery/)
 [![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
