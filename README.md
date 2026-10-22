@@ -19,10 +19,10 @@ Este repositório contém um projeto completo de engenharia de dados desenvolvid
 O pipeline foi estruturado em camadas no BigQuery, com o processamento executado via scripts em Python no ecossistema cloud, garantindo rastreabilidade, limpeza rigorosa dos dados e alta performance nas consultas analíticas:
 
 ```text
-[ Fontes de Dados / CSV ] ---> [ Google Colab / Python ] ---> [ Camada Bronze (Dados Brutos) ]
+[ Fontes de Dados / CSV ] ---> [ Camada Bronze (Dados Brutos) ] ---> [ Camada Silver (Google Colab / Python) ]
                                                                         |
                                                                         v
-[ Camada Gold (Agregações de Negócio) ] <--- [ Camada Silver (Limpeza e Tipagem) ]
+                                                     [ Camada Gold (Agregações de Negócio) ]
                                                                         |
                                                                         v
                                                    [ Consultas Analíticas via SQL / BigQuery ]
