@@ -10,19 +10,19 @@
 
 ## 📌 Visão Geral do Projeto
 
-Este repositório contém um projeto completo de engenharia de dados desenvolvido com **Google Cloud Platform (GCP)** e **Python**. O objetivo principal é implementar um pipeline analítico robusto seguindo a **Arquitetura Medalhão** (Bronze ➔ Silver ➔ Gold), utilizando o **Google BigQuery** para armazenamento e processamento eficiente via SQL, aplicando boas práticas de desenvolvimento (*Clean Code*) e versionamento de código.
+Este repositório contém um projeto completo de engenharia de dados desenvolvido com **Python**, **Google Colab** e **Google Cloud Platform (GCP)**. O objetivo principal é implementar um pipeline analítico robusto seguindo a **Arquitetura Medalhão** (Bronze ➔ Silver ➔ Gold), utilizando o **Google BigQuery** para armazenamento e processamento eficiente via SQL, aplicando boas práticas de desenvolvimento (*Clean Code*) e versionamento de código.
 
 ---
 
 ## 🏗️ Arquitetura do Projeto
 
-O pipeline foi estruturado em camadas no BigQuery, garantindo rastreabilidade, limpeza rigorosa dos dados e alta performance nas consultas analíticas:
+O pipeline foi estruturado em camadas no BigQuery, com o processamento executado via scripts em Python no ecossistema cloud, garantindo rastreabilidade, limpeza rigorosa dos dados e alta performance nas consultas analíticas:
 
 ```text
-[ Fontes de Dados / CSV ] ---> [ Camada Bronze (Dados Brutos / Raw) ]
-                                          |
-                                          v
+[ Fontes de Dados / CSV ] ---> [ Google Colab / Python ] ---> [ Camada Bronze (Dados Brutos) ]
+                                                                        |
+                                                                        v
 [ Camada Gold (Agregações de Negócio) ] <--- [ Camada Silver (Limpeza e Tipagem) ]
-                                          |
-                                          v
-                       [ Consultas Analíticas via SQL / BigQuery ]
+                                                                        |
+                                                                        v
+                                                   [ Consultas Analíticas via SQL / BigQuery ]
